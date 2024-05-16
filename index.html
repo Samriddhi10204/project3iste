@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+    <header>STUDENT DETAIL
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <form class="createform">
+              <input type="text" class="name" placeholder="Enter Name"/>
+              <input type="email" class="email"placeholder="Enter Email"/>
+              <input type="number" class="scholarno" placeholder="Enter scholar number"/>
+              <input type="number" class="phoneno" placeholder="Enter phone number"/>
+              <input type="text" class="address" placeholder="Enter address"/>
+              <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="updateform">
+                <input type="text"  hidden class="id" />
+                <input type="text" class="uname" />
+              <input type="email" class="uemail" />
+              <input type="number" class="uscholarno" />
+              <input type="number" class="uphoneno" />
+              <input type="text" class="uaddress" />
+              <button type="button"  onclick="update()">Update</button>
+            </form>
+            <div class="add-div">
+                <button type="button" onclick="create()">Add+</button>
+        
+            </div>
+            <table>
+                <thead class="elements">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Scholar Number</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </thead>
+              <tbody class="datatable">
+
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <footer><button id="alertbutton">Click Me!</button></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
